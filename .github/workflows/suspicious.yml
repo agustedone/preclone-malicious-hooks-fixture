@@ -1,0 +1,12 @@
+name: suspicious-fixture
+
+on:
+  pull_request_target:
+
+permissions: write-all
+
+jobs:
+  fixture:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "safe fixture only"
